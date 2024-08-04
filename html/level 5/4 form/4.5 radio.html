@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form><!--here name=gender only; so we can select only one button at the same time-->
+        <label for="male">Male:</label><!--for="male"(which has same name as id="male") used so when you click on male on website, it will click on radio button-->
+        <input type="radio" id="male" name="gender" value="male"> 
+        <br>
+        <label for="female">Female:</label>
+        <input type="radio" id="female"name="gender" value="female"> 
+        <br>
+        <label for="other">Other:</label>
+        <input type="radio" id="other" name="gender" value="other"> 
+        <br>
+    </form>
+    <hr>
+    <form>
+        <label for="male">Male:</label><!--here name=gender1, gender2, gender3; so we can select many button at the same time-->
+        <input type="radio" id="male" name="gender1" value="male"> 
+        <br>
+        <label for="female">Female:</label>
+        <input type="radio" id="female"name="gender2" value="female"> 
+        <br>
+        <label for="other">Other:</label>
+        <input type="radio" id="other" name="gender3" value="other"> 
+        <br>
+    </form>
+</body>
+</html>
