@@ -7,14 +7,20 @@
 </head>
 <body>
     <form>
-        <textarea name="story" id="story1" cols="20" rows="4">
+        <textarea id="story1" name="story" cols="20" rows="4">
             Please write a story
         </textarea>
         <br>
         <!--just the value of cols is changed to 50-->
-        <textarea name="story" id="story2" cols="50" rows="4">
+        <textarea id="story2" name="story" cols="50" rows="4">
             Please write a story
         </textarea>
     </form>
+    <!-- 
+        The text area has name="story". When the form is submitted, the data sent to the server will include a key "story" with the content of the text area as its value.
+
+        Example of submitted data: 
+        story=Once%20upon%20a%20time... 
+    -->
 </body>
 </html>

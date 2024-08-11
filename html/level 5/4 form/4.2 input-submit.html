@@ -15,3 +15,27 @@
     </form>
 </body>
 </html>
+
+<!-- 
+* GET Method (default):
+<form action="https://example.com/contact-me">
+    <input type="text" name="UserName" placeholder="email" required>
+    <input type="password" name="Password">
+    <input type="submit">
+</form>
+
+- What it Does: When you submit a form without specifying a method, it uses the GET method by default.
+- How it Works: The form data is added to the end of the URL. For example, if your form data is UserName=John and Password=1234, the URL might - look like this: https://example.com/contact-me?UserName=John&Password=1234.
+- Visibility: The data is visible in the URL, which can be seen by anyone and is not suitable for sensitive information.
+_________________________________________________________________________________________________________________________________________
+* POST Method:
+<form action="https://example.com/contact-me" method="post">
+    <input type="text" name="UserName" placeholder="email" required>
+    <input type="password" name="Password">
+    <input type="submit">
+</form>
+
+- What it Does: When you specify method="post", the form uses the POST method.
+- How it Works: The form data is sent in a separate part of the request, not visible in the URL. This keeps the data hidden from view.
+- Visibility: The data is not visible in the URL and is more secure, making it suitable for sensitive information like passwords.
+-->
